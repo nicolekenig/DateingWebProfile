@@ -1,0 +1,346 @@
+
+/* ------------------------------------------------------------------ */
+/* General Styles
+/* ------------------------------------------------------------------ */
+
+body { background: #FCFBED;  }
+
+/*img {
+   max-width: 100%;
+   height: auto;
+}
+img.pull-right { margin: 12px 0px 0px 18px; }
+img.pull-left { margin: 12px 18px 0px 0px; }*/
+
+
+/* ------------------------------------------------------------------ */
+/* Header Styles
+/* ------------------------------------------------------------------ */
+/*#menu
+{
+	position: fixed;
+	width: 100%;
+	height: 35px;
+
+}*/
+header {
+   position: relative;
+   height: 100px;
+   min-height: 500px;
+   width: 100%;
+   /*background: #bef2ff ;*/
+   text-align: center;
+   /*overflow: hidden;*/
+   color: #000;
+}
+header .banner {
+   width: 100%; 
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;
+}
+
+
+header .banner-text p {
+   font: 90px/1.1em 'opensans-bold', sans-serif;
+   color: rgb(0, 0, 0);
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+   padding-top:150px;
+   padding-bottom: 66px;
+  
+}
+
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+
+header .social li a { color: #fff; }
+header .social li a:hover { color: #11ABB0; }
+
+/* scrolldown link */
+header .scrolldown a {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -29px;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   border-radius: 100%;
+
+
+  /*-webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;*/
+}
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#menu ul, #menu li, #menu a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+    background: #ffba6b;
+}
+
+/* menu */
+#menu {
+   font: 13px ;  
+   width: 100%;
+   text-transform: uppercase;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+   text-align: center;
+   font-style: bold;
+}
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+   font-style: bold;
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #000;
+
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li a:current{ color: #0088ff; }
+ul#nav li a:hover{color: #55b0ff;}
+
+
+
+/* ------------------------------------------------------------------ */
+/* About Section
+/* ------------------------------------------------------------------ */
+
+#about{
+   background: #fff1d6;
+   padding-top: 66px;
+   padding-bottom: 66px;
+   overflow: hidden;   
+   font-family: Calibri; 
+}
+
+ #about a, #about a:visited  { color: rgb(0, 0, 0); } 
+ #about a:hover, #about a:focus { color: #11ABB0; } 
+
+  #about h1{
+	font: 35px/40px;
+	color:#00af89;
+	margin-bottom: 12px;
+   text-align: center;
+   left: 50%;
+	}
+   
+#about h2 {
+   font-style: Calibri;
+   font: 22px/30px;
+   color: rgb(0, 0, 0);
+   margin-bottom: 12px;
+   text-align: center;
+   left: 50%;
+}
+#about p {
+   font-style: Calibri;
+   font-size: 20px;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   left: 50%;
+}
+#about .profile-pic {
+   vertical-align: bottom;
+   position:absolute;
+   left: 10%;
+   right: 40%;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+   padding-top: 80px;
+   padding-bottom: 66px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Photo Section
+/* ------------------------------------------------------------------ */
+
+#photos {
+   background: #FCFBED;
+   padding-top: 66px;
+   padding-bottom: 66px;
+   text-align: center;
+   font-family: Calibri;
+	color:#00af89;
+}
+#photos h1 {
+   font-family: Calibri;
+   font: 35px/40px;
+   margin-bottom: 48px;
+}
+
+/* photo Content */
+#photos .columns {
+  float: left;
+  width: 32%;
+  padding: 5px;
+
+}
+
+
+.photo-item  a {
+   display: block;
+   cursor: pointer;
+}
+
+#photos .row::after {
+   content: "";
+   clear: both;
+   display: table;
+   float:center;
+ }
+
+
+/* ------------------------------------------------------------------ */
+/* Playlist Section
+/* ------------------------------------------------------------------ */
+#playlist{
+   background: #fff1d6;
+   padding-top: 66px;
+   padding-bottom: 66px;
+   text-align: center;
+   
+}
+
+#playlist h1{
+   font-family: Calibri;
+	font: 35px/40px;
+	color:#95A3A3;
+	margin-bottom: 12px;
+   text-align: center;
+   left: 50%;
+	color:#00af89;
+	}
+
+
+/* ------------------------------------------------------------------ */
+/* Like Section
+/* ------------------------------------------------------------------ */
+#like {
+   font-family: Calibri;
+	background:   #FCFBED;
+	padding-top: 66x;
+	padding-bottom: 66px;
+	text-align: center;
+	color:#00af89;
+ }
+
+/* ------------------------------------------------------------------ */
+/* QR code Section
+/* ------------------------------------------------------------------ */
+#qrcoder {
+   font-family: Calibri;
+	background: #fff1d6;
+	padding-top:66px;
+	padding-bottom: 66px;
+	text-align: center;
+	color:#00af89;
+ }
+
+ /* QR Content */
+#columns .columns {
+	margin-bottom: 36px; 
+}
+
+.QR-item .item-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.QR-item .item-wrap a {
+  display: block;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+/* Q&A Section
+/* ------------------------------------------------------------------ */
+#spa{
+   font-family: Calibri;
+	background: #FCFBED;
+	padding-top: 66px;
+	padding-bottom:66px;
+	text-align: center;
+	color:#00af89;
+
+ }
+
+
+/* ------------------------------------------------------------------ */
+/* Contact Me Section
+/* ------------------------------------------------------------------ */
+#contact{
+   font-family: Calibri;
+	background: #fff1d6;
+	padding-top: 66px;
+	padding-bottom: 66px;
+	text-align: center;
+ }
+
+ #contact h1{
+   font-family: Calibri;
+	font: 35px/40px;
+	color:#95A3A3;
+	margin-bottom: 12px;
+   text-align: center;
+   left: 50%;
+	color:#00af89;
+ }
+
+ #contact p{
+	color: rgb(0, 0, 0);
+	
+}
+
+#contact textarea
+{
+	width: 35%;
+   height: 40%;
+   align-items: center;
+}
+
+#contact .submit{
+	width: 15%;
+	color: black;
+	background-color: rgb(233, 233, 233);
+   border-radius: 10%;
+
+}
+
