@@ -30,15 +30,16 @@
   <header id ="home">
   
     <div id="menu">
-      <ul id = "nav", class = "nav">
-        <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About Me</a></li>
-        <li><a class="smoothscroll" href="#photos">My Photos</a></li>
-        <li><a class="smoothscroll" href="#playlist">My Playlist</a></li>
-        <li><a class="smoothscroll" href="#like">Like</a></li>
-        <li><a class="smoothscroll" href="#qrcoder">QR code</a></li>
-        <li><a class="smoothscroll" href="#spa">Q&A</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
+        <ul id = "nav", class = "nav">
+          <img id="logo" src="images/logo2.jpg" width="65" height="45"></img>
+          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About Me</a></li>
+          <li><a class="smoothscroll" href="#photos">My Photos</a></li>
+          <li><a class="smoothscroll" href="#playlist">My Playlist</a></li>
+          <li><a class="smoothscroll" href="#like">Like</a></li>
+          <li><a class="smoothscroll" href="#qrcoder">QR code</a></li>
+          <li><a class="smoothscroll" href="#spa">Q&A</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
       </ul> <!-- end #van -->
     </div> <!-- end #menu -->
 
@@ -161,7 +162,7 @@
   
   </section>  <!-- qrcoder Section End-->
 
-<!-- spa Section
+<!-- QA Section
 ================================================== -->
   <section id="spa" class="section">
     <div class="row">
@@ -176,7 +177,7 @@
 <!-- contact Section
 ================================================== -->
   <section id="contact" class="section" >
-    <form dir="rtl" method="post" data-action="malito:nicolek@post.bgu.ac.il" enctype="text/plain" >
+    <form dir="rtl" method="get" action="malito:nicolek@post.bgu.ac.il"  >
       <div class="row">
         <col class="col">
 
@@ -185,23 +186,11 @@
         <input id="email" type="email" placeholder="כתובת מייל">
         <p>נושא</p>
         <input id="subject" name="subject" placeholder="נושא" type="text">
-        <p>אימוג'י</p>
-        <select id="emoji">
-          <option>&#128512</option>
-          <option>&#128519</option>
-          <option>&#128521</option>
-          <option>&#128525</option>
-          <option>&#128526</option>
-          <option>&#128540</option>
-          <option>&#128578</option>
-          <option>&#129321</option>
-          <option>&#129322</option>
-        </select>
         <p>תוכן</p>
-        <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body"  rows="8" cols="50" data-emoji-picker="true" style="resize: none;"  data-emoji-picker="true"></textarea>
-    
+        <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body" rows="8" cols="80"  data-emoji-picker="true" style="resize: none;"></textarea>
+        
         <div class="row">
-          <input id="submit" type="submit" value="שלח">
+          <input id="submit" type="submit" value="שלח" onclick="send()">
         </div>
 
         </div><!-- col End -->
@@ -219,11 +208,34 @@
     });
   });
   </script>
-  <script type="text/javascript">
+
+<script type="text/javascript">
   $(document).scroll(function() {
-      $('#menu').toggle($(this).scrollTop()>1000)
+     $('#menu').toggle($(this).scrollTop()>1000)
   });​
   </script>
+
+<script>
+  function send() {
+   var link = "email:" + encodeURIComponent(document.getElementById('email').value)
+            + "?cc=nicolek@post.bgu.ac.il"
+            + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
+            + "&body=" + encodeURIComponent(document.getElementById('body').value);
+   
+   window.location.href = link;
+}
+</script>
+ 
+<script src="js/emojiPicker.js"></script>
+<script>
+  (() => {
+    new EmojiPicker()
+  })()
+</script>
+ 
+
+
+  
 
   
 </body>

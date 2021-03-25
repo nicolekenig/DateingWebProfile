@@ -31,7 +31,7 @@ header {
    width: 100%;
    /*background: #bef2ff ;*/
    text-align: center;
-   /*overflow: hidden;*/
+   overflow: hidden;
    color: #000;
 }
 header .banner {
@@ -85,6 +85,7 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 
+
 /* primary navigation
 --------------------------------------------------------------------- */
 #menu ul, #menu li, #menu a {
@@ -93,6 +94,7 @@ header .scrolldown a {
 	 border: none;
 	 outline: none;
     background: #ffba6b;
+    text-align: center;
 }
 
 /* menu */
@@ -114,6 +116,7 @@ ul#nav {
    text-align: center;
 }
 ul#nav li {
+   text-align: center;
    position: relative;
    list-style: none;
    height: 48px;
@@ -122,7 +125,7 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
-
+   text-align: center;
    display: inline-block;
    padding: 8px 13px;
    line-height: 32px;
@@ -134,7 +137,12 @@ ul#nav li a {
 /*ul#nav li a:active { background-color: transparent !important; }*/
 ul#nav li a:hover{color: #55b0ff;}
 
-
+ul#nav img{
+   float:left;
+   padding-left: 20px;
+   padding-top: 2px;
+   position:absolute;
+}
 
 /* ------------------------------------------------------------------ */
 /* About Section
@@ -325,10 +333,6 @@ ul#nav li a:hover{color: #55b0ff;}
 	
 }
 
-#contact textarea
-{
-   align-items: center;
-}
 
 #contact .submit{
 	width: 10%;
@@ -337,4 +341,5 @@ ul#nav li a:hover{color: #55b0ff;}
    border-radius: 10%;
 
 }
+
 
