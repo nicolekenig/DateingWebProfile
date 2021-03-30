@@ -141,7 +141,6 @@ ul#nav img{
    float:left;
    padding-left: 20px;
    padding-top: 2px;
-   position:absolute;
 }
 
 /* ------------------------------------------------------------------ */
@@ -277,6 +276,7 @@ ul#nav img{
 	padding-bottom: 66px;
 	text-align: center;
 	color:#00af89;
+
  }
 
  /* QR Content */
@@ -303,7 +303,15 @@ ul#nav img{
 	padding-bottom:66px;
 	text-align: center;
 	color:#00af89;
+ }
 
+ #spa h2{
+   color: #000;
+   font-size: medium;
+ }
+ 
+ #spa p{
+    color: #000;
  }
 
 
@@ -316,6 +324,7 @@ ul#nav img{
 	padding-top: 66px;
 	padding-bottom: 66px;
 	text-align: center;
+   color:#00af89;
  }
 
  #contact h1{

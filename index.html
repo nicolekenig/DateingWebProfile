@@ -168,6 +168,23 @@
     <div class="row">
       <col class="col">
       <h1>ans</h1>
+
+      <h2>:Web1,Web2,Web3 הבדלים בין</h2>
+      <p>.האתרים לא דינמיים, הם סטטיים, לכן כל פעם שצריך לעדכן את הדף צריך לעשות זאת פיזית, כלומר לשמור את הקובץ. לכן עדכונים נעשו פעם בהרבה זמן web1-ב</p>
+      <p>.בנוסף, העיצוב הוא מאוד בסיסי ולא אינטראקטיבי,ואין מנועי חיפוש צריך לחפש את המידע המבוקש בעצמינו</p>
+      <p>.הוא שהמשתמשים יכלו לשתף תוכן web1 האתרים יותר דינמיים, שיתופיים וחברתיים. השינוי הגדול מול web2-ב</p>
+      <p>בנוסף ניתן לפתח בסיס נתונים בצד השרת, למשל אפשר להירשם לאתר ולשמור את הסיסמת המשתמש בצד השרת, מה שגורם לקשר יותר אינטראקטיב
+        .משתמשים יכולים להקים אתרים בעצמם ולשתף ידע
+      </p>
+      <p>.יש מעבר לבינה מלאכותית, עיבוד שפה טבעית, המידע מוצג כבר לאחר עיבוד web3-ב</p>
+      <p>.HTTP אפשר להתחבר לאינטרנט מכל מכשיר והענן- פנייה לשרת מחרוק דרך Internet of thing -IOT :חידושים </p>
+      <br>
+
+      <h2>:דוגמא</h2>
+      <p>HTML-תרחיש שימוש- חיפוש שאילה של פקודה מסויימת ב</p>
+      <p>.המשתמש צריך לדעת את כתובת האתר כדי להגיע לדף המבוקש web1-ב</p>
+      <p>.חיפוש בגוגל למשל היה מביא את כל התוכן הקיים בנושא השאלה, כלומר תוכן שהמילים של השאילתה מופיעות בו, אך לא נקבל בהכרח תשובות רלוונטיות web2-ב</p>
+      <p>.חיפוש בגוגל היה מביא את כל התוצאות הרלוונטיות לשאילתה מדורגות לפי מדד מסויים של רלוונטיות web3-ב</p>
       </div><!-- col End -->
     </div> <!-- row End -->
  
@@ -176,27 +193,26 @@
 
 <!-- contact Section
 ================================================== -->
-  <section id="contact" class="section" >
-    <form dir="rtl" method="get" action="malito:nicolek@post.bgu.ac.il"  >
-      <div class="row">
-        <col class="col">
+<section id="contact" class="section" >
+  <form  action="mailto:nicolek@post.bgu.ac.il"  method="POST"  enctype="multipart/form-data" >
+    <div class="row">
+      <col class="col">
 
-        <h1>יצירת קשר</h1>
-        <p>כתובת מייל</p>
-        <input id="email" type="email" placeholder="כתובת מייל">
-        <p>נושא</p>
-        <input id="subject" name="subject" placeholder="נושא" type="text">
-        <p>תוכן</p>
-        <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body" rows="8" cols="80"  data-emoji-picker="true" style="resize: none;"></textarea>
-        
-        <div class="row">
-          <input id="submit" type="submit" value="שלח" onclick="send()">
-        </div>
+      <h1>יצירת קשר</h1>
+      <p>כתובת מייל</p>
+      <input id="email" name="email" type="mail" placeholder="כתובת מייל">
+      <p>נושא</p>
+      <input id="subject" name="subject" placeholder="נושא" type="text">
+      <p>תוכן</p>
+      <textarea id="body" placeholder="...כתוב כאן את תוכן המייל" name="body" rows="8" cols="10"  data-emoji-picker="true" ></textarea>
+      
+      <input id="submit" type="submit" value="send" >
 
-        </div><!-- col End -->
-      </div> <!-- row End -->
-  </form>
-  </section> <!-- contact Section End-->
+      </div><!-- col End -->
+    </div> <!-- row End -->
+    
+</form>
+</section> <!-- contact Section End-->
 
 <!-- Java Script
    ================================================== -->
@@ -215,17 +231,8 @@
   });​
   </script>
 
-<script>
-  function send() {
-   var link = "email:" + encodeURIComponent(document.getElementById('email').value)
-            + "?cc=nicolek@post.bgu.ac.il"
-            + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
-            + "&body=" + encodeURIComponent(document.getElementById('body').value);
-   
-   window.location.href = link;
-}
-</script>
- 
+
+
 <script src="js/emojiPicker.js"></script>
 <script>
   (() => {
